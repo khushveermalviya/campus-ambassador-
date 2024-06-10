@@ -1,45 +1,47 @@
 const contactData = [
     {
-        image: "sdfde",
-        name: "John Doe",
-        contact: "john@example.com",
+        image: "download.jpg",
+        name: "Head of Department",
+        contact: "heyrupali.com",
         socialLinks: {
-            twitter: "https://twitter.com/johndoe",
-            linkedin: "https://linkedin.com/in/johndoe",
-            github: "https://github.com/johndoe"
+            twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            github: "https://github.com/khushveermalviya/"
         }
     },
     {
-        image: "/khushveer.jpg",
-        name: "khushveer Malviya",
-        contact: "8058209255",
+        image: "download (3).jpg",
+        name: "Head Assistant",
+        contact: "hajilight.com",
         socialLinks: {
-            twitter: "https://twitter.com/janesmith",
-            linkedin: "https://linkedin.com/in/janesmith",
-            github: "https://github.com/janesmith"
+            twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            github: "https://github.com/khushveermalviya/"
         }
     },
     {
-        image: "image2.jpg",
-        name: "Jane Smith",
-        contact: "jane@example.com",
+        image: "download (1).jpg",
+        name: "Bodyguard",
+        contact: "lafda.com",
         socialLinks: {
-            twitter: "https://twitter.com/janesmith",
-            linkedin: "https://linkedin.com/in/janesmith",
-            github: "https://github.com/janesmith"
+            twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            github: "https://github.com/khushveermalviya/"
         }
     },
     {
-        image: "image2.jpg",
-        name: "Jane Smith",
-        contact: "jane@example.com",
+        image: "download (2).jpg",
+        name: "Sab Ko Pata Hai",
+        contact: "patakarlo.com",
         socialLinks: {
-            twitter: "https://twitter.com/janesmith",
-            linkedin: "https://linkedin.com/in/janesmith",
-            github: "https://github.com/janesmith"
+            twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            github: "https://github.com/khushveermalviya/"
         }
     },
-    // Repeat the above structure for two more objects
-    // ...
+    // Repeat the above structure for two more objects with the same links
+  
+    
 ];
+
 export default contactData;

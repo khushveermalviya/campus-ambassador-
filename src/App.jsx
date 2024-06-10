@@ -5,7 +5,6 @@ import Nav from "./Component/Nav"
 import ContactData from "./Component/Data/ContactData.js"
 import Sponsor from "./Component/Sponsor.jsx"
 import PartnersData from "./Component/Data/Sponser.js"
-import Counter from "react-number-increment";
 import Main from "./Component/Main.jsx"
 function App() {
  

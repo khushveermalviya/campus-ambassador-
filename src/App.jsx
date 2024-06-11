@@ -4,10 +4,7 @@ import Contact from "./Component/Contect"
 import Footer from "./Component/Footer"
 import Nav from "./Component/Nav"
 import ContactData from "./Component/Data/ContactData.js"
-import Sponsor from "./Component/Sponsor.jsx"
-import PartnersData from "./Component/Data/Sponser.js"
 import Main from "./Component/Main.jsx"
-import RegistrationForm from "./Component/RegistrationForm.jsx"
 import WhyApplySection from "./Component/WhyApplySection.jsx"
 
 function App() {
@@ -23,7 +20,8 @@ function App() {
       <div id="responsibilities">
         <WhyApplySection />
       </div>
-      <div id="contact" className="flex flex-row justify-evenly flex-wrap md:flex-nowrap bg-black mb-7 h-3/4 rounded-lg">
+      <h3 className="text-black text-6xl font-bold text-center w-full mb-6">Contact Us</h3>
+      <div id="contact" className="flex flex-row justify-evenly flex-wrap md:flex-nowrap bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-7 py-8 rounded-lg ">
         {ContactData.map((contact, index) => (
           <Contact
             key={index}
@@ -36,7 +34,6 @@ function App() {
       </div>
       <Footer />
     </>
-  )
+  );
 }
-
 export default App;

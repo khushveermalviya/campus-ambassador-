@@ -6,7 +6,9 @@ import Nav from "./Component/Nav"
 import ContactData from "./Component/Data/ContactData.js"
 import Main from "./Component/Main.jsx"
 import WhyApplySection from "./Component/WhyApplySection.jsx"
-
+import Banner from './Component/Banner.jsx';
+import Steps from './Component/Steps.jsx';
+import FAQSection from './Component/FAQSection.jsx';
 function App() {
   return (
     <>
@@ -19,9 +21,12 @@ function App() {
       </div>
       <div id="responsibilities">
         <WhyApplySection />
+        <Steps />
+      <Banner />
+      <FAQSection />
       </div>
       <h3 className="text-black text-6xl font-bold text-center w-full mb-6">Contact Us</h3>
-      <div id="contact" className="flex flex-row justify-evenly flex-wrap md:flex-nowrap bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-7 py-8 rounded-lg ">
+      <div id="contact" className="flex flex-row justify-evenly flex-wrap md:flex-nowrap bg-wheat mb-7 py-8 rounded-lg ">
         {ContactData.map((contact, index) => (
           <Contact
             key={index}
@@ -32,6 +37,7 @@ function App() {
           />
         ))}
       </div>
+     
       <Footer />
     </>
   );

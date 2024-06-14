@@ -22,6 +22,10 @@ function App() {
       <div id="responsibilities">
         <WhyApplySection />
         <Steps />
+        <div className='w-full h-auto pb-60'>
+        <img src='hackx2.png'  className='w-full h-101 p-64'></img>
+        </div>
+        
       <Banner />
       <FAQSection />
       </div>

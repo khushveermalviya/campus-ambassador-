@@ -1,45 +1,56 @@
 const contactData = [
     {
         image: "download.jpg",
-        name: "Head of Department",
-        contact: "heyrupali.com",
+        name: "Naad Dantla",
+        contact: "+91 77220 87410",
         socialLinks: {
-            twitter: "https://x.com/khushveermalvi",
-            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
-            github: "https://github.com/khushveermalviya/"
+            // twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/naad/",
+            // github: "https://github.com/khushveermalviya/"
         }
     },
     {
         image: "download (3).jpg",
-        name: "Head Assistant",
-        contact: "hajilight.com",
+        name: "Roshmeet Chakraborty ",
+        contact: "+91 70445 29443",
         socialLinks: {
-            twitter: "https://x.com/khushveermalvi",
-            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
-            github: "https://github.com/khushveermalviya/"
+            // twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/roshmeet",
+            // github: "https://github.com/khushveermalviya/"
         }
     },
     {
         image: "download (1).jpg",
-        name: "Bodyguard",
+        name: "Rishi Joshi",
         contact: "lafda.com",
         socialLinks: {
-            twitter: "https://x.com/khushveermalvi",
+            // twitter: "https://x.com/khushveermalvi",
             linkedin: "https://www.linkedin.com/in/khushveermalviya/",
-            github: "https://github.com/khushveermalviya/"
+            // github: "https://github.com/khushveermalviya/"
         }
     },
     {
         image: "download (2).jpg",
-        name: "Sab Ko Pata Hai",
+        name: "Shristi Krishna",
         contact: "patakarlo.com",
         socialLinks: {
-            twitter: "https://x.com/khushveermalvi",
+            // twitter: "https://x.com/khushveermalvi",
             linkedin: "https://www.linkedin.com/in/khushveermalviya/",
-            github: "https://github.com/khushveermalviya/"
+            // github: "https://github.com/khushveermalviya/"
         }
     },
-    // Repeat the above structure for two more objects with the same links
+    
+    {
+        image: "download (2).jpg",
+        name: "pulkit Gupta",
+        contact: "patakarlo.com",
+        socialLinks: {
+            // twitter: "https://x.com/khushveermalvi",
+            linkedin: "https://www.linkedin.com/in/khushveermalviya/",
+            // github: "https://github.com/khushveermalviya/"
+        }
+    },
+ 
   
     
 ];

@@ -2,6 +2,7 @@ import React from 'react'
 import RotatingText from 'react-rotating-text';
 import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 import Count from './Count';
+import './index.css';
 export default function Heading() {
     const words = [`Win from the Biggest Prize Pool of ₹5,00,000/-`,"Registrations open till 14th August, 2024 11:59 PM"];
   
@@ -9,11 +10,11 @@ export default function Heading() {
     return (
     <div>
 <section className="relative bg-cover bg-center h-full flex flex-col pt-40" style={{ backgroundImage: "url('/bg.png')", backgroundSize: 'cover' }}>
-           <div className=" inset-0 bg-black bg-opacity-50 "></div>
+<div className=" inset-0 bg-black bg-opacity-50 "></div>
       <div className="relative z-10 flex items-center justify-center  h-full gap-7">
         <div className="text-center px-4 sm:px-6 lg:px-8 w-full lg:w-1/2 gap-6 ">
-        <p className=" hidden text-base w-full text-white sm:text-xl lg:text-lg mb-8 lg:flex justify-center gap-2">
-    <span className='pt-1 pl-7'> <RiMoneyRupeeCircleLine/>  </span>  Win from the Biggest Prize Pool of ₹5,00,000/-
+        <p className="hidden text-base w-full text-white sm:text-xl lg:text-lg mb-8 lg:flex justify-center gap-2 glowing-effect">
+    <span className='pt-1 pl-7'><RiMoneyRupeeCircleLine /></span> Win from the Biggest Prize Pool of ₹5,00,000/-
 </p>
 <h1 className="text-white text-6xl sm:text-4xl lg:text-8xl mb-4 bg-gradient-to-r from-amber-200 via-amber-200 to-amber-400 bg-clip-text text-transparent" style={{ textShadow: '0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5)' }}>
        MUJ <span className='font-bold'>HACK</span> <span className='bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 bg-clip-text'>2.0</span>

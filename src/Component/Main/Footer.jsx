@@ -17,16 +17,14 @@ export default function Footer() {
     <li className='cursor-pointer font-bold   '>Contact Us</li>
     <li className='cursor-pointer font-bold   '>FAQ</li>
 </ul>
-  <img className='w-40 h-32 cursor-pointer' src="/HackX.png" alt="logo" />
-    <div className='flex items-center gap-3 mb-5 footer-list '>
+  <img className='w-64 h-28 cursor-pointer pt-9' src="/logo.svg" alt="logo" />
+  <div className='flex items-center gap-3 mb-5 footer-list mt-4'>
 
- <a className='cursor-pointer '><IoEarthOutline />
-  </a>  
-  <a className='cursor-pointer '> <FaInstagram />
-  </a>   
-  <a className='cursor-pointer '><FaLinkedin />
-  </a>
-  </div>
+<a className='cursor-pointer'><IoEarthOutline size="24px" /></a>  
+<a className='cursor-pointer'><FaInstagram size="24px" /></a>   
+<a className='cursor-pointer'><FaLinkedin size="24px" /></a>
+
+</div>
      
 <p className='flex footer-list m-6 text-center gap-3'> ©2024 MUJHackX, All rights reserved.</p>
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Count() {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-12-31') - +new Date();
+    const difference = +new Date('2024-09-09') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {

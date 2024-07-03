@@ -12,7 +12,7 @@ export default function Footer() {
     <li className='cursor-pointer font-bold   '>About</li>
     <li className='cursor-pointer font-bold   '>Timeline</li>
     <li className='cursor-pointer font-bold   '>Team</li>
-    <li className='cursor-pointer font-bold   '>Campus Ambassado</li>
+    <li className='cursor-pointer font-bold   '>Campus Ambassador</li>
     <li className='cursor-pointer font-bold   '>Gallery</li>
     <li className='cursor-pointer font-bold   '>Contact Us</li>
     <li className='cursor-pointer font-bold   '>FAQ</li>

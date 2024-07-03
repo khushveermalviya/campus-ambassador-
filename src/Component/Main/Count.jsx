@@ -32,7 +32,7 @@ export default function Count() {
       className="w-full h-96 rounded-2xl flex gap-9 flex-col items-center justify-center bg-cover bg-center"
 
     >
-      <h2 className='text-white text-5xl'>Showdown start in </h2>
+      <h2 className='text-white text-2xl lg:5xl'>Showdown start in </h2>
       <div className="flex items-start justify-center w-full gap-1.5 count-down-main">
         <div className="timer">
           <div className="rounded-xl bg-black/25 backdrop-blur-sm py-3 min-w-[96px] flex items-center justify-center flex-col gap-1 px-3">

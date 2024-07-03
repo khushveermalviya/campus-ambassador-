@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Sponsor() {
   return (
-    <div className='flex justify-center flex-col  w-full'>
+    <div className='flex justify-center flex-col  w-full mt-7'>
       <h1 className='text-sm text-center p-6 text-white lg:text-2xl w-full'>HackX was powered by top partners and sponsors across the nation previous year</h1>
     <div className="grid grid-cols-2 gap-5 justify-center m-10 w-full p-15 lg:grid-cols-5">
       <img src="sponsor-1.png" alt="Sponsor 1" className="w-20 text-white h-auto bg-white rounded-lg lg:w-20" />

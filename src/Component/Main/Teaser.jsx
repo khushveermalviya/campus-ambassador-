@@ -1,56 +1,76 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useWindowSize } from 'react-use';
 import classNames from 'classnames';
 import teaserVideo from '/teaser.mp4'; // Adjust the path as necessary
 
 export default function Teaser() {
-    const [isPlaying, setIsPlaying] = useState(true);
     const { width } = useWindowSize();
     const videoRef = useRef(null);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsPlaying(true);
-            if (videoRef.current) {
-                videoRef.current.play();
-            }
-        }, 5000);
-
-        return () => {
-            clearTimeout(timer);
-            if (videoRef.current) {
-                videoRef.current.pause();
-            }
-        };
-    }, [isPlaying]);
-
-    const handleTogglePlay = () => {
-        setIsPlaying(!isPlaying);
-        if (!isPlaying) {
-            videoRef.current.play();
-        } else {
-            videoRef.current.pause();
-        }
-    };
-
     const teaserClass = classNames('teaser', {
-        'teaser--playing': isPlaying,
-        'teaser--paused': !isPlaying,
         'teaser--small': width < 768,
         'teaser--medium': width >= 768 && width < 1024,
         'teaser--large': width >= 1024,
     });
 
+    useEffect(() => {
+        const videoElement = videoRef.current;
+
+        const handleMouseEnter = () => {
+            console.log('Mouse entered, unmuting video');
+            videoElement.muted = false;
+        };
+
+        const handleMouseLeave = () => {
+            console.log('Mouse left, muting video');
+            videoElement.muted = true;
+        };
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    console.log('Video is in view, unmuting');
+                    videoElement.muted = false;
+                    videoElement.play(); // Ensure video plays when in view
+                } else {
+                    console.log('Video is out of view, muting');
+                    videoElement.muted = true;
+                    videoElement.pause(); // Pause video when out of view
+                }
+            },
+            {
+                threshold: 0.5, // Adjust as necessary to determine how much of the video should be in view
+            }
+        );
+
+        observer.observe(videoElement);
+
+        videoElement.addEventListener('mouseenter', handleMouseEnter);
+        videoElement.addEventListener('mouseleave', handleMouseLeave);
+
+        return () => {
+            observer.disconnect();
+            videoElement.removeEventListener('mouseenter', handleMouseEnter);
+            videoElement.removeEventListener('mouseleave', handleMouseLeave);
+        };
+    }, []);
+
     return (
         <div className={teaserClass}>
-            <video ref={videoRef} className="teaser-video" muted loop>
+            <video 
+                ref={videoRef} 
+                className="teaser-video" 
+                autoPlay 
+                muted 
+                loop
+                playsInline
+                onCanPlay={() => console.log('Video can play')}
+                onError={(e) => console.error('Video error:', e)}
+            >
                 <source src={teaserVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="teaser-content">Teaser</div>
-            <button className="teaser-toggle" onClick={handleTogglePlay}>
-                {isPlaying ? 'Pause' : 'Play'}
-            </button>
         </div>
     );
 }

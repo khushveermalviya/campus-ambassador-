@@ -14,7 +14,7 @@ export default function Main() {
 <Heading /> 
 <Cards/>
 <Sponsor/>
-{/* <Teaser /> */}
+<Teaser />
 <Footer />
 
     </div>

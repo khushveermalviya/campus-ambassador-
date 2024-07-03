@@ -6,16 +6,16 @@ import { FaLinkedin } from "react-icons/fa6";
 import './index.css'; // Adjust the path according to your file structure
 export default function Footer() {
   return (
-<div className='flex items-center flex-col w-full h-full bg-hack footer-list mt-10'>
-<ul className="hidden items-center gap-10 text-2xl flex-col lg:flex-row footer-list lg:flex  mt-10" >
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>Home</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>About</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>Timeline</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>Team</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>Campus Ambassado</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>Gallery</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>Contact Us</li>
-    <li className='cursor-pointer font-bold hover:text-violet-700 ease-in duration-300'>FAQ</li>
+<div className='flex items-center flex-col w-full h-full bg-hack footer-list mt-10 border-t-4 border-white'>
+<ul className="hidden items-center gap-10 text-xl flex-col lg:flex-row footer-list lg:flex  mt-10" >
+    <li className='cursor-pointer font-bold   '>Home</li>
+    <li className='cursor-pointer font-bold   '>About</li>
+    <li className='cursor-pointer font-bold   '>Timeline</li>
+    <li className='cursor-pointer font-bold   '>Team</li>
+    <li className='cursor-pointer font-bold   '>Campus Ambassado</li>
+    <li className='cursor-pointer font-bold   '>Gallery</li>
+    <li className='cursor-pointer font-bold   '>Contact Us</li>
+    <li className='cursor-pointer font-bold   '>FAQ</li>
 </ul>
   <img className='w-40 h-32 cursor-pointer' src="/HackX.png" alt="logo" />
     <div className='flex items-center gap-3 mb-5 footer-list '>

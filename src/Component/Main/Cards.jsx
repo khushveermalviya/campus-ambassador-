@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Cards() {
   return (
-    <div className='grid grid-rows-3 grid-cols-2 ml-10 gap-y-4 lg:flex lg:justify-center lg:gap-10'>
+    <div className='grid grid-rows-3 grid-cols-2 ml-20 gap-y-4 sm:flex sm:justify-center sm:gap-10'>
       <img src="001.png" alt="sd 2" className="w-20 h-auto rounded-lg lg:w-32" />
       <img src="002.png" alt="sdd 2" className="w-20 h-auto rounded-lg lg:w-32" />
       <img src="003.png" alt="sddd 2" className="w-20 h-auto rounded-lg lg:w-32" />

@@ -4,4 +4,6 @@
 html {
     scroll-behavior: smooth;
   }
-  
+  .footer-list li {
+    color: white;
+}

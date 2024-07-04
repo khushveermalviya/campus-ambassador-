@@ -29,7 +29,7 @@ export default function Count() {
 
   return (
     <div
-      className="w-full h-96 rounded-2xl flex gap-9 flex-col items-center justify-center bg-cover bg-center"
+      className="w-full h-96 rounded-2xl flex gap-9 flex-col items-center justify-center bg-cover bg-center p-7"
 
     >
       <h2 className='text-white text-2xl lg:5xl'>Showdown start in </h2>

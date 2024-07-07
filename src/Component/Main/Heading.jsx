@@ -2,7 +2,7 @@ import {useState,useEffect} from 'react'
 import RotatingText from 'react-rotating-text';
 import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 import Count from './Count';
-import './index.css';
+
 import Blink from './Blink';
 export default function Heading() {
     const words = [`Win from the Biggest Prize Pool of ₹5,00,000/-`,"Registrations open till 14th August, 2024 11:59 PM"];

@@ -8,6 +8,6 @@ import Main from './Component/Main/Main.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-<Main />
+<App />
   </React.StrictMode>,
 )

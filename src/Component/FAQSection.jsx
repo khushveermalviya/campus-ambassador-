@@ -46,7 +46,7 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="accordion py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl hover:bg-indigo-50 accordion-active:bg-indigo-50"
+              className="accordion py-8 px-6 border-b border-solid border-gray-200 transition-all duration-500 rounded-2xl accordion-active:bg-indigo-50"
               id={`basic-heading-${index}`}
             >
               <button

@@ -15,7 +15,7 @@ import Become from "./Component/Become.jsx";
 function App() {
   
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-slate-900 text-white">
+    <div className="bg-black   text-white">
     <Nav/>
    <Banner/>
    <Main/>

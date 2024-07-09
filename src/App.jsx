@@ -15,18 +15,14 @@ import Become from "./Component/Become.jsx";
 function App() {
   
   return (
-    <div className="bg-black   text-white">
-    <Nav/>
-   <Banner/>
-   <Main/>
-   <Carousel/>
-
-<Steps/>
-
-
-<Become/>
-<FAQSection/>
-     </div>
+    <div className='w-full  font-poppins bg-gradient-to-r from-slate-900 to-slate-700'> 
+      <Banner/>
+      <Main/>
+     <Carousel/>
+     <Steps/>
+      <Become/>
+  
+    </div>
   );
 }
 export default App;

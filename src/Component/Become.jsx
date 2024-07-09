@@ -1,3 +1,4 @@
+
 export default function Become() {
   return(
 <div className="w-full h-full flex justify-center p-36">

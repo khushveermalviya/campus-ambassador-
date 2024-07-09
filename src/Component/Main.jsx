@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = () => {
   return (
-    <div className='h-full w-full'>
+    <div className='h-full w-full font-mono'>
       <div className='flex justify-center flex-col w-full items-start h-screen gap-24'>
         <div className='flex justify-center lg:flex-row flex-col  gap-10'>
           <h1 className='text-6xl lg:w-1/3 text-center'>About us</h1>

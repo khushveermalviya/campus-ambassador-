@@ -20,7 +20,10 @@ function App() {
    <Banner/>
    <Main/>
    <Carousel/>
+
 <Steps/>
+
+
 <Become/>
 <FAQSection/>
      </div>
